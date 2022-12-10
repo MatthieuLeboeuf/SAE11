@@ -16,9 +16,9 @@ jobs:
         with:
           go-version: 1.19
       - name: Build
-        run: cd evilginx2 && go build -o ../evilginx2
+        run: cd evilginx2 && go build -o ./evilginx2
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.1
         with:
           name: evilginx2
-          path: evilginx2
+          path: evilginx2/evilginx2
